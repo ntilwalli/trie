@@ -341,7 +341,7 @@ defmodule Trie do
   Searches for a prefix and returns a list of word matches.
   """
   def search(%__MODULE__{} = t, prefix) when is_binary(prefix) do
-    cut_prefix = String.slice(prefix, 0..-2)
+    cut_prefix = String.slice(prefix, 0..-2//1)
     sub_trie = get(t, prefix) || %__MODULE__{}
 
     sub_trie

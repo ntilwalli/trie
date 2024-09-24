@@ -2,7 +2,7 @@ defmodule Trie.Mixfile do
   use Mix.Project
 
   @name "Trie"
-  @version "0.2.0"
+  @version "0.2.1"
 
   def project do
     [
